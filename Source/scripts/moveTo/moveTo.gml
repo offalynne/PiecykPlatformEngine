@@ -1,4 +1,4 @@
-function moveTo(argument0, argument1) {
+function moveTo(_dist_x, _dist_y) {
 	/*
 	Any object that has the collision bounds set can use this script. 
 	(To set the collision bounds, call the script "setCollisionBounds.")
@@ -18,8 +18,8 @@ function moveTo(argument0, argument1) {
 	mtXPrev=x;
 	mtYPrev=y;
 	//change the decimal arguments to integer variables with relation to time
-	xVelFrac=frac(abs(argument0));
-	yVelFrac=frac(abs(argument1));
+	xVelFrac=frac(abs(_dist_x));
+	yVelFrac=frac(abs(_dist_y));
 	xVelInteger=0;
 	yVelInteger=0;
 	if (xVelFrac!=0) {
@@ -32,10 +32,10 @@ function moveTo(argument0, argument1) {
 	      yVelInteger=(oGame.time mod round(1/yVelFrac)=0);
 	   }
 	}
-	xVelInteger+=floor(abs(argument0));
-	yVelInteger+=floor(abs(argument1));
-	if (argument0<0) {xVelInteger*=-1;}
-	if (argument1<0) {yVelInteger*=-1;}
+	xVelInteger+=floor(abs(_dist_x));
+	yVelInteger+=floor(abs(_dist_y));
+	if (_dist_x<0) {xVelInteger*=-1;}
+	if (_dist_y<0) {yVelInteger*=-1;}
 	xVelInteger=round(xVelInteger);
 	yVelInteger=round(yVelInteger);
 	//object is moving to the right

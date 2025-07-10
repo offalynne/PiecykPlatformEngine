@@ -6,11 +6,8 @@ function isCollisionCharacter() {
 	with (oCharacter) {
 	  calculateCollisionBounds();
 	  //if there is a collision with tempId on the character's right side
-	  if (collision_rectangle(lb,tb,rb-1,bb-1,tempId,1,1)>0) {
-	    return 1;
-	  }
+	  return collision_rectangle(lb,tb,rb-1,bb-1,tempId,1,1)>0;
 	}
-	return 0;
 
 
 

@@ -1,4 +1,4 @@
-function isCollisionCharacterBottom(argument0, argument1) {
+function isCollisionCharacterBottom(_distance, _target) {
 	/*
 	0: Number of pixels to the bottom of the collision rectangle to check for a collision
 	with the character.
@@ -6,16 +6,13 @@ function isCollisionCharacterBottom(argument0, argument1) {
 	*/
 	//the solid must be hitting the character's top side, so...
 	oGame.collisionTempId=id;
-	w=argument1;
-	if ((argument1==0) or (argument1==noone)) {w=oCharacter;}
+	w=_target;
+	if ((_target==0) or (_target==noone)) {w=oCharacter;}
 	with (w) {
 	  calculateCollisionBounds();
 	  //if there is a collision with tempId on the character's top side
-	  if (collision_line(round(lb),round(tb-argument0),round(rb-1),round(tb-argument0),oGame.collisionTempId,1,1)>0) {
-	    return 1;
-	  }
+	  return collision_line(round(lb),round(tb-_distance),round(rb-1),round(tb-_distance),oGame.collisionTempId,1,1)>0;
 	}
-	return 0;
 
 
 
