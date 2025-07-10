@@ -90,7 +90,6 @@
     {"id":{"name":"canPushMoveableSolids","path":"scripts/canPushMoveableSolids/canPushMoveableSolids.yy",},"order":8,},
     {"id":{"name":"canLandOnPlatforms","path":"scripts/canLandOnPlatforms/canLandOnPlatforms.yy",},"order":9,},
     {"id":{"name":"setCollisionBounds","path":"scripts/setCollisionBounds/setCollisionBounds.yy",},"order":10,},
-    {"id":{"name":"action_kill_object","path":"scripts/action_kill_object/action_kill_object.yy",},"order":0,},
     {"id":{"name":"__init_action","path":"scripts/__init_action/__init_action.yy",},"order":1,},
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":0,},
     {"id":{"name":"object_get_depth","path":"scripts/object_get_depth/object_get_depth.yy",},"order":0,},
