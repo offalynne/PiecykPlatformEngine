@@ -1,4 +1,4 @@
-function setCollisionBounds(argument0, argument1, argument2, argument3) {
+function setCollisionBounds(_left, _top, _right, _bottom) {
 	/*
 	Sets the collision bounds which are relative to the origin of the sprites.
 	0:left x
@@ -6,10 +6,10 @@ function setCollisionBounds(argument0, argument1, argument2, argument3) {
 	2:right x
 	3:bottom y
 	*/
-	collisionBoundsOffsetLeftX=argument0;
-	collisionBoundsOffsetTopY=argument1;
-	collisionBoundsOffsetRightX=argument2;
-	collisionBoundsOffsetBottomY=argument3;
+	collisionBoundsOffsetLeftX=_left;
+	collisionBoundsOffsetTopY=_top;
+	collisionBoundsOffsetRightX=_right;
+	collisionBoundsOffsetBottomY=_bottom;
 
 
 
