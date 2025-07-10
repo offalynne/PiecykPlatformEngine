@@ -1,3 +1,17 @@
+#macro STANDING		10
+#macro RUNNING		11
+#macro DUCKING		12
+#macro LOOKING_UP	13
+#macro CLIMBING		14
+#macro JUMPING		15
+#macro FALLING		16
+#macro DYING		17
+#macro LEFT			18
+#macro RIGHT		19
+#macro ON_GROUND	20
+#macro IN_AIR		21
+#macro ON_LADDER	22
+
 function characterCreateEvent() {
 	/*
 	This script should be placed in the "Create Event" of the platform character.
@@ -10,21 +24,6 @@ function characterCreateEvent() {
 	If you are just going to use the default Mario sprites, there is no reason to edit
 	the arguments.
 	*/
-
-	//constant states that the platform character may be (don't edit)
-	STANDING=10;
-	RUNNING=11;
-	DUCKING=12;
-	LOOKING_UP=13;
-	CLIMBING=14;
-	JUMPING=15;
-	FALLING=16;
-	DYING=17;
-	LEFT=18;
-	RIGHT=19;
-	ON_GROUND=20;
-	IN_AIR=21;
-	ON_LADDER=22;
 
 	//the keys that the platform character will use (don't edit)
 	kLeft=0;
