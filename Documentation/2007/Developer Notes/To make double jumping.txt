@@ -1,0 +1,47 @@
+Tutorial to make double jumping:
+Last updated: 2007-02-01
+
+Add this one statement in characterCreateEvent (you can put it practically anywhere you want, for instance at the top):
+
+doubleJumped=0      //whether the character double jumped yet
+
+Open up characterStepEvent, find this code:
+
+  {
+    yAcc+=initialJumpAcc
+    xAcc+=xVel/2
+  }
+
+and change it to:
+
+  {
+    yAcc+=initialJumpAcc
+    xAcc+=xVel/2
+//START OF DOUBLE JUMP CODE
+    doubleJumped = 0
+//END OF DOUBLE JUMP CODE
+  }
+
+Now find this code in characterStepEvent (it's right below):
+
+  //the "state" gets changed to JUMPING later on in the code
+  state=FALLING
+  //"variable jumping" states
+  jumpButtonReleased=0
+  jumpTime=0
+}
+
+And add this after the closing curly brace:
+
+//START OF DOUBLE JUMP CODE
+if doubleJumped=0 and isCollisionBottom(1)=0 and isCollisionPlatformBottom(1)=0 and kJumpPressed
+{
+  doubleJumped=1
+  if yVel>-2
+    yVel=-2
+  yAcc=-7
+  state=FALLING
+}
+//END OF DOUBLE JUMP CODE
+
+These steps will allow double jumping.

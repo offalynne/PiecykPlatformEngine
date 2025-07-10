@@ -1,0 +1,17 @@
+First, all of the moving solids move. If the character is standing on top of them the solid usually moves the character too. The moving solids will also push the character out of the way if there will be a collision. If the moving solids can't push the character out of the way, they won't move at all. 
+
+Next, the moveable solids move downwards and are pushed by the character. 
+
+Then, ALL of the code is executed to determine where the character will be moving depending on if the user pressed the jump button, the character is on a ladder, on the ground, etc. 
+
+Subsequently, the friction is calculated to dampen the velocity. 
+
+Afterwards, the character is moved up 5 or so pixels, depending on if the character hits a solid from above. 
+
+Then, the velocity is altered so that the character can land exactly on a jump-through platform. If there is no jump-through platform nearby, the velocity is not altered. 
+
+Ducking / sliding velocity is also added so that the character can slide down hills. 
+
+Lastly, the character moves with the acquired velocity. This velocity includes the sliding velocity. First, the character moves horizontally (stopping if the character hits a solid). 
+
+Next, the character moves vertically. Furthermore, the "5 or so pixels" that the character moved up needs to be reversed. So the character will also move "5 or so pixels" down (during the time that the character is moving vertically.) If the character is running on a hill, then the character will end up moving only 2 or 3 pixels down since he will collide with the upward slope. And that's the end of the step event. 
