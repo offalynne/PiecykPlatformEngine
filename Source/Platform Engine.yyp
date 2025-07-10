@@ -81,7 +81,6 @@
     {"id":{"name":"getIdCollisionCharacterTop","path":"scripts/getIdCollisionCharacterTop/getIdCollisionCharacterTop.yy",},"order":7,},
     {"id":{"name":"approximatelyZero","path":"scripts/approximatelyZero/approximatelyZero.yy",},"order":0,},
     {"id":{"name":"calculateCollisionBounds","path":"scripts/calculateCollisionBounds/calculateCollisionBounds.yy",},"order":1,},
-    {"id":{"name":"isCollisionRectangle","path":"scripts/isCollisionRectangle/isCollisionRectangle.yy",},"order":2,},
     {"id":{"name":"isCollisionSolid","path":"scripts/isCollisionSolid/isCollisionSolid.yy",},"order":3,},
     {"id":{"name":"isCollisionLadder","path":"scripts/isCollisionLadder/isCollisionLadder.yy",},"order":4,},
     {"id":{"name":"isCollisionPlatform","path":"scripts/isCollisionPlatform/isCollisionPlatform.yy",},"order":5,},
