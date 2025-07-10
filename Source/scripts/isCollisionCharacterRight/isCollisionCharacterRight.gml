@@ -1,4 +1,4 @@
-function isCollisionCharacterRight(argument0, argument1) {
+function isCollisionCharacterRight(_distance, _target) {
 	/*
 	0: Number of pixels right of the collision rectangle to check for a collision
 	with the character.
@@ -6,12 +6,12 @@ function isCollisionCharacterRight(argument0, argument1) {
 	*/
 	//the solid must be hitting the character's left side, so...
 	oGame.collisionTempId=id;
-	w=argument1;
-	if ((argument1==0) or (argument1==noone)) {w=oCharacter;}
+	w=_target;
+	if ((_target==0) or (_target==noone)) {w=oCharacter;}
 	with (w) {
 	  calculateCollisionBounds();
 	  //if there is a collision with tempId on the character's left side
-	  if (collision_line(round(lb-argument0),round(tb),round(lb-argument0),round(bb-1),oGame.collisionTempId,1,1)>0) {
+	  if (collision_line(round(lb-_distance),round(tb),round(lb-_distance),round(bb-1),oGame.collisionTempId,1,1)>0) {
 	    return 1;
 	  }
 	}
