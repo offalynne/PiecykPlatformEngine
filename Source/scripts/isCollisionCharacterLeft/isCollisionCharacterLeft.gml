@@ -11,11 +11,8 @@ function isCollisionCharacterLeft(_distance, _target) {
 	with (w) {
 	  calculateCollisionBounds();
 	  //if there is a collision with tempId on the character's right side
-	  if (collision_line(round(rb+_distance-1),round(tb),round(rb+_distance-1),round(bb-1),oGame.collisionTempId,1,1)>0) {
-	    return 1;
-	  }
+	  return collision_line(round(rb+_distance-1),round(tb),round(rb+_distance-1),round(bb-1),oGame.collisionTempId,1,1)>0;
 	}
-	return 0;
 
 
 

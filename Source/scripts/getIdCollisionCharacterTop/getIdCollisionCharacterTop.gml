@@ -10,7 +10,6 @@ function getIdCollisionCharacterTop(_distance) {
 	  //if there is a collision with tempId on the character's bottom side
 	  return collision_line(round(lb),round(bb+_distance-1),round(rb-1),round(bb+_distance-1),tempId,1,1);
 	}
-	return 0;
 
 
 

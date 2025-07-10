@@ -17,7 +17,7 @@ function isCollisionRectangle(argument0, argument1, argument2, argument3, argume
 	w2=argument6-argument4;
 	h2=argument7-argument5;
 	if ((w2<=0) or (h2<=0) or (w1<=0) or (h1<=0)) {
-	  return 0;
+	  return false;
 	}
 	w2+=argument4;
 	h2+=argument5;

@@ -14,15 +14,15 @@ function platformCharacterIs(_state) {
 	*/
 
 	if ((_state=ON_GROUND) and ((state=RUNNING) or (state=STANDING) or (state=DUCKING) or (state=LOOKING_UP))) {
-	  return 1;
+	  return true;
 	}
 	if ((_state=IN_AIR) and ((state=JUMPING) or (state=FALLING))) {
-	  return 1;
+	  return true;
 	}
 	if ((_state=ON_LADDER) and (state=CLIMBING)) {
-	  return 1;
+	  return true;
 	}
-	return 0;
+	return false;
 
 
 

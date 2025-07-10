@@ -5,10 +5,7 @@ function isCollisionPlatformBottom(_distance) {
 	with a platform object.
 	*/
 	calculateCollisionBounds();
-	if (collision_line(round(lb),round(bb+_distance-1),round(rb-1),round(bb+_distance-1),oPlatform,1,1)>0) {
-	  return 1;
-	}
-	return 0;
+	return collision_line(round(lb),round(bb+_distance-1),round(rb-1),round(bb+_distance-1),oPlatform,1,1)>0;
 
 
 

@@ -5,10 +5,7 @@ function isCollisionLeft(_distance) {
 	with a solid object.
 	*/
 	calculateCollisionBounds();
-	if (collision_line(round(lb-_distance),round(tb),round(lb-_distance),round(bb-1),oSolid,1,1)>0) {
-	  return 1;
-	}
-	return 0;
+	return collision_line(round(lb-_distance),round(tb),round(lb-_distance),round(bb-1),oSolid,1,1)>0;
 
 
 

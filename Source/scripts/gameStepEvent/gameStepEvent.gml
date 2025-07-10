@@ -55,7 +55,8 @@ function gameStepEvent() {
 	  solidIsNearPlayers=0;    //whether the solid is near either of the players
 	  //determine if the solid is close to a player
 	  for (i=0; i<oGame.players_length; i+=1;) {
-	    if (isCollisionRectangle(x-abs(xVelInteger)-sprite_xoffset-2,y-abs(yVelInteger)-sprite_yoffset-2,x+sprite_width+abs(xVelInteger)-sprite_xoffset+2,y+sprite_height+abs(yVelInteger)-sprite_yoffset+2,oGame.players[i].lb,oGame.players[i].tb,oGame.players[i].rb,oGame.players[i].bb)) {
+	    //if (isCollisionRectangle(x-abs(xVelInteger)-sprite_xoffset-2,y-abs(yVelInteger)-sprite_yoffset-2,x+sprite_width+abs(xVelInteger)-sprite_xoffset+2,y+sprite_height+abs(yVelInteger)-sprite_yoffset+2,oGame.players[i].lb,oGame.players[i].tb,oGame.players[i].rb,oGame.players[i].bb)) {
+		if (rectangle_in_rectangle(x-abs(xVelInteger)-sprite_xoffset-2,y-abs(yVelInteger)-sprite_yoffset-2,x+sprite_width+abs(xVelInteger)-sprite_xoffset+2,y+sprite_height+abs(yVelInteger)-sprite_yoffset+2,oGame.players[i].lb,oGame.players[i].tb,oGame.players[i].rb,oGame.players[i].bb)) {
 	      solidIsNearPlayers=1;
 	      break;
 	    }
