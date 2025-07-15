@@ -1,6 +1,6 @@
 # Piecyk Platform Engine
 
-Martin Piecyk's 2007 Platform Engine for GM LTS
+[Martin Piecyk](https://github.com/mpiecyk)'s 2007 Platform Engine for GM LTS
 - [Martin's Website](https://martinpiecyk.com/platformengine/index.html)
 - [Luís Sousa's GMS1 port (2017)](https://forum.gamemaker.io/index.php?threads/17570)
 
@@ -15,9 +15,9 @@ Martin Piecyk's 2007 Platform Engine for GM LTS
 ## TBD
 - Precise collision is broken
 - Depth is (probably) broken
-- Compatibility scripts are problematic/sub-optimal
+- Legacy compatibility scripts are sub-optimal
 
 ## See also
-- [Grandma Engine (2009)](https://web.archive.org/web/20131103182124if_/http://www.mattmakesgames.com/matt/GrandmaEngine.gmk)
-- [Sara's Complete Platformer (2018)](https://shaunjs.itch.io/shauns-complete-platformer-tutorial-series)
-- [Loj Hadron Collider (2021)](https://github.com/Lojemiru/Loj-Hadron-Collider)
+- [Grandma Engine (M. Thorson, 2009)](https://web.archive.org/web/20131103182124if_/http://www.mattmakesgames.com/matt/GrandmaEngine.gmk)
+- [Complete Platformer (S. Spaulding, 2018)](https://shaunjs.itch.io/shauns-complete-platformer-tutorial-series)
+- [Loj Hadron Collider (Lojemiru, 2021)](https://github.com/Lojemiru/Loj-Hadron-Collider)
