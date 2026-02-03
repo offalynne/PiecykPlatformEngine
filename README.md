@@ -4,7 +4,7 @@ A [GMS2 2024 LTS](https://gamemaker.io/en/blog/version-lts-r3) import of [Martin
 
 This project is historically important to the legacy of popular platform games made in GM, as the initial backbone of both Spelunky and AM2R, amoung other popular GM-developed projects. Humble at first glance, it replicates physics, play control and collision behaviour of Super Mario World thoroughly and in a way that is flexible to adaptation.
 
-In it's current state the project is historically interesting and potentially instructive. The projects builds and basic physics are sound, but unsurprisingly given the generational gap there are bugs, mostly collision-related from a cursory look. Contributions are welcome to bring the updated project into working parity with the original. 
+In it's current state the project is historically interesting and potentially instructive. The projects builds and basic physics are sound, but unsurprisingly given the generation gap there are bugs, mostly collision-related from a cursory look. Contributions are welcome to bring the updated project into working parity with the original. 
 
 Documentation from both the original 2007 GM6.1 release and the 2017 GMS1 update are included.
 
