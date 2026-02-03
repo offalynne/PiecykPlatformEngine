@@ -6,7 +6,7 @@ This project is historyically important to the legacy of popular games made in G
 
 In it's current state the project is historically interesting and potentially instructive. The projects builds and basic physics are sound, but unsurprisingly given the generational gap there are bugs, mostly collision-related from a cursory look. Contributions are welcome to bring the updated project into working parity with the original. 
 
-Documentation from both the original 2007 GM6.1 release and the 2017 GMS1 update versions are included in the repo.
+Documentation from both the original 2007 GM6.1 release and the 2017 GMS1 update are included.
 
 - [Martin's Website](https://martinpiecyk.com/platformengine/index.html)
 - [Luís Sousa's GMS1 port (2017)](https://forum.gamemaker.io/index.php?threads/17570)
