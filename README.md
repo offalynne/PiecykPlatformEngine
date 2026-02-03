@@ -1,6 +1,6 @@
 # Piecyk Platform Engine
 
-A GMS2 LTS import of [Martin Piecyk](https://github.com/mpiecyk)'s 2007 Platform Engine.
+A [GMS2 2024 LTS](https://gamemaker.io/en/blog/version-lts-r3) import of [Martin Piecyk](https://github.com/mpiecyk)'s 2007 Platform Engine.
 
 This project is historyically important to the legacy of popular games made in GM, as the initial backbone of both Spelunky and AM2R, amoung other popular GM developed projects. Humble at first glance, it replicates physics, play control and collision behaviour of Super Mario World thoroughly and in a way that is flexible to adaptation.
 
